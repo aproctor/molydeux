@@ -19,6 +19,10 @@
   		opacity: 1;
   	}
   	
+  	#locationinfo {
+  	  font-size: 30px;
+  	}
+  	
   	
   </style>
 </head>
@@ -27,24 +31,36 @@
   <header>
 
   </header>
+  <div id="locationinfo"></div>
+  <div id="videofeed">
+    <!-- updated via JavaScript code, see below -->
+  </div>
 
+  
+  <a class="origin" href="http://www.justin.tv/molyjamsf">San Fransisco</a>
   <a class="origin" id="Sydney" href="http://www.justin.tv/molyjamsydney">Sydney</a>
   <a class="origin" id="London" href="http://www.twitch.tv/metzopaino">London</a>
   <a class="origin" id="Montreal" href="http://www.justin.tv/molyjammtl">Montreal</a>
+  <a class="origin" href="http://www.justin.tv/molyjamny">New York</a>
   <a class="origin" id="Munich" href="http://www.twitch.tv/codesurgeon">Munich</a>
   <a class="origin" id="Toronto" href="http://www.justin.tv/molyjamto">Toronto</a>
   <a class="origin" id="Lisbon" href="http://www.twitch.tv/4orbidd3n">Lisbon</a>
   <a class="origin" id="LA" href="http://www.twitch.tv/molyjamla">Los Angeles</a>
   <a class="origin" id="Monterrey" href="http://www.twitch.tv/mikealebrije">Monterrey</a>
   <a class="origin" id="Guadalajara" href="http://www.twitch.tv/molyjamguadalajara">Guadalajara</a>
-  <div id="videofeed">
-    <!-- updated via JavaScript code, see below -->
-  </div>
-
-  <div id="locationinfo"></div>
+  <a class="origin" href="http://www.justin.tv/molyjamdieburg">Dieburg</a>
+  <a class="origin" href="http://www.justin.tv/4orbidd3n">Lisbon(?)</a>
+  <a class="origin" href="http://www.justin.tv/molyjamnl">Netherlands</a>
+  <a class="origin" href="http://www.justin.tv/molyjamorlando">Orlando</a>
+  <a class="origin" href="http://www.justin.tv/molyjamturku">Turku</a>
+  <a class="origin" href="http://www.justin.tv/molyjamta">Tel Aviv</a>
+  <a class="origin" href="http://www.justin.tv/oaklandmolyjam">Oakland</a>
+  <a class="origin" href="http://www.justin.tv/molyjammelbourne">Melbourne</a>
+  
+  
   <input id="rotate" type="checkbox" name="rotate" checked onchange="setRotate(this);" /><label for="rotate">Auto-cycle</label>
-  every <input id="delay" type="text" name="delay" value="60" />
-  <select id="rotateMultiplier"><option value="1000" selected>seconds</option><option value="60000">minutes</option></select>
+  every <input id="delay" type="text" name="delay" value="5" />
+  <select id="rotateMultiplier"><option value="1000">seconds</option><option value="60000" selected>minutes</option></select>
   <input type="button" onclick="updateEmbedCode();" value="Next Live Stream" />
   <br />
   <input id="liveStreamOnly" type="checkbox" name="liveStream" onchange="setLiveStreamOnly(this);" /><label for="liveStreamOnly">Show only live streams.  </label>
